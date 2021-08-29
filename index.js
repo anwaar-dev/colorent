@@ -30,7 +30,7 @@ let colors = [
 function colorScan() {
   for (var i = 0; i < colors.length; i++) {
     let newColor = document.createElement('content');
-    //newColor.classList.add('work');
+    newColor.innerHTML='<h2>#'+colors[i]+'</h2>';
     newColor.style.background = '#'+colors[i];
     document.querySelector('main').appendChild(newColor);
 
