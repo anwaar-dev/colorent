@@ -15,11 +15,19 @@ header{
 }
 header h1{
 	text-align: center;
-	padding-top: 110px;
+	padding-top: 100px;
 	font-family: Inter, sans-serif;
 	color: white;
 	margin: 0;
 	font-size: 80px;
+}
+header h2{
+	text-align: center;
+	font-family: Nunito, sans-serif;
+	font-weight: lighter;
+	color: white;
+	margin: 0;
+	font-size: 24px;
 }
 nav{
 	width: 100%;
@@ -40,15 +48,18 @@ nav a{
 	min-width: 15px;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition-duration: 0.15s;
 	font-size: 18px;
 	background-size: 80%;
 }
 nav a:hover{
 	background-color: #fff;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
 }
 nav a.name{background-image: url("images/wordmarkwhite.svg");width: 100px;}
 nav a.name:hover{background-image: url("images/wordmark.svg");}
-nav a.liked{background-image: url("images/likewhite.svg");}
+nav a.liked{background-image: url("images/like.svg");}
 nav a.liked:hover{background-image: url("images/likered.svg");}
 main{
 	width: 100%;
@@ -69,11 +80,11 @@ main content{
 	text-align: center;
 	user-select: text;
 	color: transparent;
-	transition-duration: 0.2s;
-	width: 30%;
-	height: 190px;
+	transition-duration: 0.15s;
+	width: 22%;
+    height: 220px;
 }
 main content h2{
-	padding-top: 60px;
+	padding-top: 80px;
 }
 main content:hover{color: white;}

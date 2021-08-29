@@ -25,6 +25,7 @@ let colors = [
   '00A99F',
   '4E5CF0',
   'EF5A4D',
+  '17A05D',
 
 ];
 function colorScan() {
