@@ -1,0 +1,70 @@
+body{
+	background: black;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+	margin: 0;
+	background: linear-gradient(90deg, rgba(178,31,247,1) 4%, rgba(104,120,246,1) 62%, rgba(33,204,245,1) 96%);
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: 250px;
+	background: linear-gradient(90deg, rgba(178,31,247,1) 4%, rgba(104,120,246,1) 62%, rgba(33,204,245,1) 96%);
+}
+header h1{
+	text-align: center;
+	padding-top: 110px;
+	color: white;
+	margin: 0;
+	font-size: 80px;
+	font-family: sans-serif;
+}
+nav{
+	width: 100%;
+	height: 55px;
+	background: white;
+	background: linear-gradient(90deg, rgba(178,31,247,1) 4%, rgba(104,120,246,1) 62%, rgba(33,204,245,1) 96%);
+	display: flex;
+	position: sticky;
+	top: 0px;
+	box-shadow: 0px 20px 20px 0px white;
+	flex-direction: row;
+}
+nav a{
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	padding-top: 18px;
+	min-width: 15px;
+	font-family: sans-serif;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 18px;
+	background-size: 80%;
+}
+nav a:hover{
+	background-color: #fff;
+}
+nav a.liked{background-image: url("images/likewhite.svg");}
+nav a.liked:hover{background-image: url("images/likered.svg");}
+main{
+	width: 100%;
+	height: auto;
+	margin-bottom: 100px;
+	background: white;
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+main content{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	width: 30%;
+	height: 190px;
+}
+

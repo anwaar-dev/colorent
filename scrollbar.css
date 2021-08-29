@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+::-webkit-scrollbar{width: 14px}
+::-webkit-scrollbar-track{background-color: #fff}
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    background: linear-gradient(180deg, rgba(178,31,247,1) 4%, rgba(104,120,246,1) 62%, rgba(33,204,245,1) 96%);;
+}
