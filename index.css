@@ -8,6 +8,20 @@ body{
 	background: linear-gradient(90deg, rgba(178,31,247,1) 4%, rgba(104,120,246,1) 62%, rgba(33,204,245,1) 96%);
 	padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header{
 	width: 100%;
 	height: 250px;
@@ -29,6 +43,21 @@ header h2{
 	margin: 0;
 	font-size: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav{
 	width: 100%;
 	height: 55px;
@@ -51,16 +80,30 @@ nav a{
 	transition-duration: 0.15s;
 	font-size: 18px;
 	background-size: 80%;
+	margin-left: 10px;
 }
 nav a:hover{
 	background-color: #fff;
-	border-top-left-radius: 14px;
-	border-top-right-radius: 14px;
+	border-radius: 14px;
 }
 nav a.name{background-image: url("images/wordmarkwhite.svg");width: 100px;}
-nav a.name:hover{background-image: url("images/wordmark.svg");}
-nav a.liked{background-image: url("images/like.svg");}
-nav a.liked:hover{background-image: url("images/likered.svg");}
+nav a.name:hover{background-image: url("images/wordmark.svg");box-shadow: 0px 1px 4px 0px #0c0c0c;transform: translateY(-5px);}
+nav a.liked{background-image: url("images/liked.png");}
+nav a.liked:hover{background-color: #ef4f59;box-shadow: 0px 1px 4px 0px #0c0c0c;transform: translateY(-5px);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main{
 	width: 100%;
 	height: auto;
@@ -73,18 +116,114 @@ main{
 	flex-direction: row;
 	justify-content: space-evenly;
 }
-main content{
+content{
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border-radius: 20px;
+	border-radius: 26px;
+    box-shadow: inset 0px 0px 3px 0px black;
 	text-align: center;
 	user-select: text;
 	color: transparent;
 	transition-duration: 0.15s;
+	display: flex;
+	flex-direction: column;
 	width: 22%;
     height: 220px;
 }
-main content h2{
-	padding-top: 80px;
+content h2{
+	padding-top: 10px;
 }
-main content:hover{color: white;}
+content:hover{color: white;}
+content:hover .likeButt{background-image: url('images/like.png');background-color: #f1515c;box-shadow: 0px 1px 4px 0px #0c0c0c;}
+.likeButt{
+	width: 46px;
+    height: 46px;
+	background-image: none;
+	background-size: 40px 40px;
+	margin-top: 10px;
+	border-radius: 23%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition-duration: 0.15s;
+	border: 1px solid transparent;
+    margin: 10px;
+}
+.likeButt:hover{background-color: #ef4f59;animation: shake 0.3s linear infinite;}
+content:hover .disLikeButt{background-image: url('images/dislike.png');}
+.disLikeButt{
+	width: 50px;
+	height: 50px;
+	background-image: none;
+	background-size: 40px 40px;
+	margin-top: 10px;
+	border-radius: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition-duration: 0.15s;
+	border: 1px solid transparent;
+    margin: 10px;
+}
+.disLikeButt:hover{background-color: #E03E48;border: 1px solid white;}
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+section#liked{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes shake{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(8deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-8deg);}
+	100%{transform: rotate(0deg);}
+}
