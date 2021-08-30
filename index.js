@@ -54,7 +54,6 @@ let colors = [
   '00AFF0',
   '6878F6',
   'B21FF7',
-
   '474EB4',
   'E03E48',
   '9B55A9',
@@ -65,7 +64,6 @@ let colors = [
   '1C1917',
   '11362A',
   'F03630',
-
   '278DC2',
   'AB253B',
   'AFC271',
@@ -77,6 +75,15 @@ let colors = [
   '4E5CF0',
   'EF5A4D',
   '17A05D',
+  'AA0E4F',
+  '029CEA',
+  '8CCE41',
+  'C4A668',
+  'A83DA0',
+  '7351CA',
+  '17CEC4',
+  'BC9952',
+
 
 ];
 
@@ -115,9 +122,6 @@ function Like(c) {
   Data.Liked.push(colors[c]);
 
   let uniqueSet = new Set(Data.Liked);
-// Set { '🐑', 1, 2, 3 }
-
-// Step 2
   Data.Liked = [...uniqueSet];
 
   document.querySelector('#liked').innerHTML='';
@@ -126,6 +130,8 @@ function Like(c) {
 }
 function Dislike(c) {
   Data.Liked.splice(c,1);
+  document.querySelector('#liked').innerHTML='';
+  likedColorScan()
   save();
 }
 

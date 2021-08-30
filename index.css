@@ -149,21 +149,21 @@ content:hover .likeButt{background-image: url('images/like.png');background-colo
     margin: 10px;
 }
 .likeButt:hover{background-color: #ef4f59;animation: shake 0.3s linear infinite;}
-content:hover .disLikeButt{background-image: url('images/dislike.png');}
+content:hover .disLikeButt{background-image: url('images/dislike.png');background-color: #f1515c;box-shadow: 0px 1px 4px 0px #0c0c0c;}
 .disLikeButt{
-	width: 50px;
-	height: 50px;
+	width: 46px;
+    height: 46px;
 	background-image: none;
 	background-size: 40px 40px;
 	margin-top: 10px;
-	border-radius: 100%;
+	border-radius: 23%;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition-duration: 0.15s;
 	border: 1px solid transparent;
     margin: 10px;
 }
-.disLikeButt:hover{background-color: #E03E48;border: 1px solid white;}
+.disLikeButt:hover{background-color: #ef4f59;animation: shake 0.3s linear infinite;}
 
 
 
