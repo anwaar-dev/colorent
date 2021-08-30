@@ -8,7 +8,26 @@ body{
 	background: linear-gradient(90deg, rgba(178,31,247,1) 4%, rgba(104,120,246,1) 62%, rgba(33,204,245,1) 96%);
 	padding: 0;
 }
-
+.temp{
+	width: fit-content;
+    border-radius: 13px;
+    text-align: center;
+    margin-top: 6px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    box-shadow: 0px 1px 4px black;
+    font-family: 'Nunito';
+    position: fixed;
+	width: inherit;
+	background: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #0F0F0F;
+}
 
 
 
