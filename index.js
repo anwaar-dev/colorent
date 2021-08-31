@@ -141,3 +141,13 @@ function Dislike(c) {
 
 
 
+
+
+
+function hideScreens() {
+  document.querySelector('main').style.display='none';
+  document.querySelector('#liked').style.display='none';
+  document.querySelector('#suggestion').style.display='none';
+  document.querySelector('#feedback').style.display='none';
+  document.querySelector('#talk').style.display='none';
+}

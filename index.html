@@ -18,10 +18,47 @@
 	<div class="temp">Underdevelopment</div>
 
 <header><h1>COLORENT</h1><h2>Things Get Better With Colors</h2></header>
-<nav><a class="name" onclick="document.querySelector('main').style.display='flex';document.querySelector('section').style.display='none';"></a> <a class="liked" onclick="document.querySelector('#liked').style.display='flex';document.querySelector('main').style.display='none';"></a></nav>
+<nav>
+	<a class="name" onclick="hideScreens();document.querySelector('main').style.display='flex';"><span class="tooltiptext">Explore Colors</span></a>
+	<a class="liked" onclick="hideScreens();document.querySelector('#liked').style.display='flex';"><span class="tooltiptext">Favorite Colors</span></a>
+	<a class="suggest" onclick="hideScreens();document.querySelector('#suggestion').style.display='flex';"><span class="tooltiptext">Suggest A Color</span></a>
+	<a class="feedback" onclick="hideScreens();document.querySelector('#feedback').style.display='flex';"><span class="tooltiptext">Give Feedback</span></a>
+	<a class="talk" onclick="hideScreens();document.querySelector('#talk').style.display='flex';"><span class="tooltiptext">Contact Owner</span></a>
+</nav>
 
-<main><!-- ALL COLORS --></main>
-<section id="liked"></section>
+<!-- ALL COLORS --><main></main>
+<!-- LIKED COLORS --><section id="liked"></section>
+<!-- SUGGEST COLORS --><section id="suggestion">
+	<h2>Suggest Me Your Favorite Colors</h2>
+	<form method="post" name="Suggestion" data-netlify="true" action="#">
+    	<label>Your Email:<br>
+    	<input type="email" name="email" class="emailBox" placeholder="Optional"></label>
+    	<br>
+    	<label>Your Name:<br>
+    	<input type="text" name="name" class="emailBox" required="required" placeholder="So That I Can Credit You"></label>
+    	<br>
+    	<label>Color/s:<br>
+    	<textarea name="colors" class="colors" required="required" placeholder="#ffffff or ffffff"></textarea></label>
+		<!-- SUBMIT --><br>
+    	<input type="submit" class="submitButton" value="Send">
+	</form>
+</section>
+<!-- GIVE FEEDBACK --><section id="feedback">
+	<h2>Give Feedback</h2>
+	<form method="post" name="Feedback" data-netlify="true" action="#">
+    	<label>Your Email:<br>
+    	<input type="email" name="email" class="emailBox" placeholder="If You Want Get Reply"></label>
+    	<br>
+    	<label>Your Name:<br>
+    	<input type="text" name="name" class="emailBox" placeholder="Optional"></label>
+    	<br>
+    	<label>Message:<br>
+    	<textarea name="Message" class="message" required="required" placeholder="Type Here..."></textarea></label>
+		<!-- SUBMIT --><br>
+    	<input type="submit" class="submitButton" value="Send">
+</section>
+<!-- TALK --><section id="talk"></section>
+
 
 <script src="index.js"></script>
 </body>
