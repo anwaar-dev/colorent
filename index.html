@@ -19,7 +19,7 @@
 
 <header><h1>COLORENT</h1><h2>Things Get Better With Colors</h2></header>
 <nav>
-	<a class="name" onclick="hideScreens();document.querySelector('main').style.display='flex';"><span class="tooltiptext">Explore Colors</span></a>
+	<a class="explore" onclick="hideScreens();document.querySelector('main').style.display='flex';"><span class="tooltiptext">Explore Colors</span></a>
 	<a class="liked" onclick="hideScreens();document.querySelector('#liked').style.display='flex';"><span class="tooltiptext">Favorite Colors</span></a>
 	<a class="suggest" onclick="hideScreens();document.querySelector('#suggestion').style.display='flex';"><span class="tooltiptext">Suggest A Color</span></a>
 	<a class="feedback" onclick="hideScreens();document.querySelector('#feedback').style.display='flex';"><span class="tooltiptext">Give Feedback</span></a>
@@ -35,7 +35,7 @@
     	<input type="email" name="email" class="emailBox" placeholder="Optional"></label>
     	<br>
     	<label>Your Name:<br>
-    	<input type="text" name="name" class="emailBox" required="required" placeholder="So That I Can Credit You"></label>
+    	<input type="text" name="name" class="emailBox" required="required" maxlength="20" placeholder="So That I Can Credit You"></label>
     	<br>
     	<label>Color/s:<br>
     	<textarea name="colors" class="colors" required="required" placeholder="#ffffff or ffffff"></textarea></label>

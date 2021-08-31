@@ -127,8 +127,8 @@ nav a .tooltiptext {
 nav a:hover .tooltiptext {
   visibility: visible;
 }
-nav a.name{background-image: url("images/wordmarkwhite.svg");width: 100px;}
-nav a.name:hover{background-image: url("images/wordmark.svg");}
+nav a.explore{background-image: url("images/explore.png");}
+nav a.explore:hover{background-color: #ef4f59;}
 nav a.liked{background-image: url("images/liked.png");}
 nav a.liked:hover{background-color: #ef4f59;}
 nav a.suggest{background-image: url("images/suggestion.png");}
@@ -177,6 +177,9 @@ content{
 }
 content h2{
 	padding-top: 10px;
+}
+content h5{
+	padding:0;
 }
 content:hover{color: white;}
 content:hover .likeButt{background-image: url('images/like.png');background-color: #f1515c;box-shadow: 0px 1px 4px 0px #0c0c0c;}

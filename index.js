@@ -50,39 +50,39 @@ function save() {
 
 
 let colors = [
-  '96C672',
-  '00AFF0',
-  '6878F6',
-  'B21FF7',
-  '474EB4',
-  'E03E48',
-  '9B55A9',
-  'F77E4A',
-  '27B26F',
-  'EDC537',
-  '3E5BB7',
-  '1C1917',
-  '11362A',
-  'F03630',
-  '278DC2',
-  'AB253B',
-  'AFC271',
-  '3B576D',
-  'E9792F',
-  '14A800',
-  '00BFB5',
-  '00A99F',
-  '4E5CF0',
-  'EF5A4D',
-  '17A05D',
-  'AA0E4F',
-  '029CEA',
-  '8CCE41',
-  'C4A668',
-  'A83DA0',
-  '7351CA',
-  '17CEC4',
-  'BC9952',
+  ['96C672','Anwaar'],
+  ['00AFF0','Anwaar'],
+  ['6878F6','Anwaar'],
+  ['B21FF7','Anwaar'],
+  ['474EB4','Anwaar'],
+  ['E03E48','Anwaar'],
+  ['9B55A9','Anwaar'],
+  ['F77E4A','Anwaar'],
+  ['27B26F','Anwaar'],
+  ['EDC537','Anwaar'],
+  ['3E5BB7','Anwaar'],
+  ['1C1917','Anwaar'],
+  ['11362A','Anwaar'],
+  ['F03630','Anwaar'],
+  ['278DC2','Anwaar'],
+  ['AB253B','Gabokase'],
+  ['AFC271','Anwaar'],
+  ['3B576D','Anwaar'],
+  ['E9792F','Anwaar'],
+  ['14A800','Anwaar'],
+  ['00BFB5','Anwaar'],
+  ['00A99F','Anwaar'],
+  ['4E5CF0','Anwaar'],
+  ['EF5A4D','Anwaar'],
+  ['17A05D','Eleven'],
+  ['AA0E4F','Anwaar'],
+  ['029CEA','Anwaar'],
+  ['8CCE41','Anwaar'],
+  ['C4A668','Anwaar'],
+  ['A83DA0','Anwaar'],
+  ['7351CA','Anwaar'],
+  ['17CEC4','Anwaar'],
+  ['BC9952','Anwaar'],
 
 
 ];
@@ -95,16 +95,16 @@ let colors = [
 function colorScan() {
   for (var i = 0; i < colors.length; i++) {
     let newColor = document.createElement('content');
-    newColor.innerHTML='<a class="likeButt" onclick="Like('+i+');"></a>'+'<h2>#'+colors[i]+'</h2>';
-    newColor.style.background = '#'+colors[i];
+    newColor.innerHTML='<a class="likeButt" onclick="Like('+i+');"></a>'+'<h2>#'+colors[i][0]+'</h2>'+'<h5>By '+colors[i][1]+'</h5>';
+    newColor.style.background = '#'+colors[i][0];
     document.querySelector('main').appendChild(newColor);
   }
 }
 function likedColorScan() {
   for (var i = 0; i < Data.Liked.length; i++) {
     let newLikeColor = document.createElement('content');
-    newLikeColor.innerHTML='<a class="disLikeButt" onclick="Dislike('+i+');"></a>'+'<h2>#'+Data.Liked[i]+'</h2>';
-    newLikeColor.style.background = '#'+Data.Liked[i];
+    newLikeColor.innerHTML='<a class="disLikeButt" onclick="Dislike('+i+');"></a>'+'<h2>#'+Data.Liked[i][0]+'</h2>'+'</h2>'+'<h5>By '+Data.Liked[i][1]+'</h5>';
+    newLikeColor.style.background = '#'+Data.Liked[i][0];
     document.querySelector('#liked').appendChild(newLikeColor);
   }
 }
