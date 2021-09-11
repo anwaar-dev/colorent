@@ -170,11 +170,15 @@ function Dislike(c) {
 
 
 
+function shuffle(array) {
+  array = array.sort(() => Math.random() - 0.5);
+  document.querySelector('main').innerHTML='';
+  colorScan();
+}
 
 
 
-
-
+shuffle(colors);
 
 
 function hideScreens() {

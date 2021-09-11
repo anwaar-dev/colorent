@@ -168,51 +168,55 @@ content{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 26px;
-    box-shadow: inset 0px 0px 3px 0px black;
+  box-shadow: inset 0px 0px 3px 0px black;
 	text-align: center;
 	user-select: text;
 	color: transparent;
 	transition-duration: 0.15s;
 	display: flex;
 	flex-direction: column;
-	width: 22%;
-    height: 220px;
+	width: 22vw;
+  height: 18vw;
 }
 content h2{
 	padding-top: 10px;
 }
 content h5{
 	padding:0;
+	user-select: none;
+	font-family: Montserrat, sans-serif;
+	letter-spacing: 0.5px;
 }
 content:hover{color: white;}
+content:hover h5{color: white;text-shadow: 0 0 5px #000000;}
 content:hover .likeButt{background-image: url('images/like.png');background-color: #f1515c;box-shadow: 0px 1px 4px 0px #0c0c0c;}
 .likeButt{
-	width: 46px;
-    height: 46px;
+	width: 3.5vw;
+  height: 3.5vw;
 	background-image: none;
-	background-size: 40px 40px;
+	background-size: 3vw 3vw;
 	margin-top: 10px;
 	border-radius: 23%;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition-duration: 0.15s;
 	border: 1px solid transparent;
-    margin: 10px;
+  margin: 10px;
 }
 .likeButt:hover{background-color: #ef4f59;animation: shake 0.3s linear infinite;}
 content:hover .disLikeButt{background-image: url('images/dislike.png');background-color: #f1515c;box-shadow: 0px 1px 4px 0px #0c0c0c;}
 .disLikeButt{
-	width: 46px;
-    height: 46px;
+	width: 3.5vw;
+  height: 3.5vw;
 	background-image: none;
-	background-size: 40px 40px;
+	background-size: 3vw 3vw;
 	margin-top: 10px;
 	border-radius: 23%;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition-duration: 0.15s;
 	border: 1px solid transparent;
-    margin: 10px;
+  margin: 10px;
 }
 .disLikeButt:hover{background-color: #ef4f59;animation: shake 0.3s linear infinite;}
 
